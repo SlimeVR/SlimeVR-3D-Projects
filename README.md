@@ -32,7 +32,8 @@ It's reccomended to watch a [beginner's tutorial](https://youtu.be/8gi9lUYMRcI?s
 
 6. Once finished, set the End Frame to your last keyframe. 
 
-Video: 
+https://github.com/user-attachments/assets/19c5e868-23c0-4cd4-9ba8-474090d7fc6c
+
 
 ### Linking New Collections:
 
@@ -42,7 +43,8 @@ Video:
 
 3. In your blender file, right click on the imported collection in the View Layer and select **Library Override->Make->Selected & Content**. Sometimes you may need to do this for child objects as well. 
 
-Video:
+https://github.com/user-attachments/assets/df0cc59e-d7b5-4199-8708-cbabb1c4b0fb
+
 
 
 ### Rendering: 

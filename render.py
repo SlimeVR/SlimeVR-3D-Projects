@@ -21,7 +21,7 @@ def batch_render(blender_path, projects_dir):
                 blender_path,
                 "-b", project_path,
                 "-o", render_path,
-                "-F", "PNG",
+                "-F", "WEBP",
                 "-a"
             ]
 

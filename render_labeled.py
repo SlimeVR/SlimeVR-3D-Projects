@@ -10,7 +10,10 @@ import bpy
 output_dir, name = sys.argv[sys.argv.index("--") + 1:][:2]
 
 scene = bpy.context.scene
-scene.render.image_settings.file_format = "WEBP"
+image_settings = scene.render.image_settings
+if hasattr(image_settings, "media_type"):
+    image_settings.media_type = "IMAGE"
+image_settings.file_format = "WEBP"
 
 markers = {}
 for marker in scene.timeline_markers:

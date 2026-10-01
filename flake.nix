@@ -11,13 +11,18 @@
       let
         pkgs = nixpkgs.legacyPackages.${system};
         python = pkgs.python312;
+        blender = pkgs.blender;
       in
       {
+        packages.blender = blender;
+        packages.default = blender;
+
         devShells.default = pkgs.mkShell {
           buildInputs = with pkgs; [
             python
             python312Packages.pip
             python312Packages.virtualenv
+            blender
           ];
 
           shellHook = ''

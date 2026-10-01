@@ -15,9 +15,12 @@ CACHE_FILE = "render_cache.json"
 VIDEO_SETUP = (
     "import bpy; "
     "r = bpy.context.scene.render; "
+    "r.film_transparent = True; "
     "r.image_settings.file_format = 'FFMPEG'; "
-    "r.ffmpeg.format = 'MPEG4'; "
-    "r.ffmpeg.codec = 'H264'; "
+    "r.ffmpeg.format = 'WEBM'; "
+    "r.ffmpeg.codec = 'WEBM'; "
+    "r.image_settings.color_mode = 'RGBA'; "
+    "r.ffmpeg.audio_codec = 'NONE'; "
     "r.ffmpeg.constant_rate_factor = 'HIGH'"
 )
 
@@ -99,7 +102,7 @@ def batch_render(blender_path, projects_dir, only=None, force=False):
                     json.dump(cache, f, indent=2, sort_keys=True)
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description=f"Batch render Blender projects. Files suffixed with '{VIDEO_SUFFIX}' are rendered as MP4 video, others as WEBP frames.")
+    parser = argparse.ArgumentParser(description=f"Batch render Blender projects. Files suffixed with '{VIDEO_SUFFIX}' are rendered as transparent WebM video, others as WEBP frames.")
     parser.add_argument("blender_path", help="Path to the Blender executable")
     parser.add_argument("projects_dir", nargs="?", default=os.path.abspath("projects"),
                         help="Directory containing .blend files (default: ./projects)")

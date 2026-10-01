@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Mounting Reset Poses</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500;700;900&display=block" rel="stylesheet">
+<style>
+  :root {
+    --bg: rgb(8, 30, 48);
+    --card: rgb(16, 44, 68);
+    --floor: rgb(34, 68, 96);
+    --text: #fff;
+    --text-soft: rgb(170, 192, 212);
+    --accent: rgb(178, 120, 255);
+    --cell-w: 940px;
+    --cell-h: 1080px;
+    --gap: 40px;
+    --label-col: 420px;
+  }
+  * { box-sizing: border-box; margin: 0; }
+  html, body { background: var(--bg); }
+  body {
+    width: 4500px;
+    height: 4050px;
+    padding: 90px 110px 140px 90px;
+    font-family: "Noto Sans", "DejaVu Sans", Arial, sans-serif;
+    color: var(--text);
+  }
+  header {
+    margin-left: calc(var(--label-col) - 4px);
+    padding-left: 50px;
+    border-left: 18px solid var(--accent);
+    border-radius: 9px 0 0 9px;
+    margin-bottom: 110px;
+  }
+  h1 { font-size: 140px; font-weight: 900; line-height: 1.05; letter-spacing: -1px; }
+  header p { font-size: 56px; font-weight: 500; color: var(--text-soft); margin-top: 10px; }
+
+  .grid {
+    display: grid;
+    grid-template-columns: var(--label-col) repeat(4, var(--cell-w));
+    grid-template-rows: auto;
+    grid-auto-rows: var(--cell-h);
+    gap: var(--gap);
+  }
+  .grid > .col {
+    align-self: end;
+    text-align: center;
+    font-size: 66px;
+    font-weight: 900;
+    padding-bottom: 20px;
+  }
+  .grid > .col::after {
+    content: "";
+    display: block;
+    width: 110px;
+    height: 10px;
+    margin: 22px auto 0;
+    border-radius: 5px;
+    background: var(--accent);
+  }
+  .row {
+    align-self: center;
+    justify-self: end;
+    padding-right: 10px;
+    font-size: 64px;
+    font-weight: 900;
+    white-space: nowrap;
+  }
+  .card {
+    background: var(--card);
+    border-radius: 36px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 60px;
+  }
+  .card .figure {
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    min-height: 0;
+  }
+  .crop { position: relative; overflow: hidden; width: calc(var(--cw) * 1px); height: calc(var(--ch) * 1px); }
+  .crop img { position: absolute; max-width: none; left: calc(var(--x) * -1px); top: calc(var(--y) * -1px);
+              width: calc(var(--w) * 1px); height: calc(var(--h) * 1px); }
+  .card .floor { height: 5px; background: var(--floor); border-radius: 3px; }
+  .card .label { height: 115px; padding-top: 18px; text-align: center; font-size: 52px; font-weight: 700; }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Mounting Reset Poses</h1>
+  </header>
+
+  <main class="grid">
+    <div></div>
+    <div class="col">Arms Forward</div>
+    <div class="col">Elbows Bent</div>
+    <div class="col">T-Pose</div>
+    <div class="col">Arms Down</div>
+
+    <div class="row">Feet Flat</div>
+    <div class="card"><div class="figure"><div class="crop" style="--w:1043; --h:958; --x:381; --y:52; --cw:633; --ch:888"><img data-project="mounting_forward_video" data-frame="16" src="render/infographic/mounting_forward_video.png" alt=""></div></div><div class="floor"></div><div class="label">Arms Forward</div></div>
+    <div class="card"><div class="figure"><div class="crop" style="--w:533; --h:947; --x:124; --y:39; --cw:378; --ch:903"><img data-project="mounting_back_video" data-frame="16" src="render/infographic/mounting_back_video.png" alt=""></div></div><div class="floor"></div><div class="label">Elbows Bent</div></div>
+    <div class="card"><div class="figure"><div class="crop" style="--w:1043; --h:958; --x:381; --y:52; --cw:372; --ch:888"><img data-project="mounting_tpose_up_video" data-frame="16" src="render/infographic/mounting_tpose_up_video.png" alt=""></div></div><div class="floor"></div><div class="label">T-Pose</div></div>
+    <div class="card"><div class="figure"><div class="crop" style="--w:1043; --h:958; --x:365; --y:52; --cw:388; --ch:888"><img data-project="mounting_tpose_down_video" data-frame="16" src="render/infographic/mounting_tpose_down_video.png" alt=""></div></div><div class="floor"></div><div class="label">Arms Down</div></div>
+
+    <div class="row">On Tiptoes</div>
+    <div class="card"><div class="figure"><div class="crop" style="--w:1151; --h:1057; --x:481; --y:69; --cw:638; --ch:948"><img data-project="mounting_forward_tiptoe_video" data-frame="16" src="render/infographic/mounting_forward_tiptoe_video.png" alt=""></div></div><div class="floor"></div><div class="label">Arms Forward</div></div>
+    <div class="card"><div class="figure"><div class="crop" style="--w:590; --h:1050; --x:201; --y:67; --cw:373; --ch:945"><img data-project="mounting_back_tiptoe_video" data-frame="16" src="render/infographic/mounting_back_tiptoe_video.png" alt=""></div></div><div class="floor"></div><div class="label">Elbows Bent</div></div>
+    <div class="card"><div class="figure"><div class="crop" style="--w:1097; --h:1008; --x:455; --y:48; --cw:371; --ch:940"><img data-project="mounting_tpose_up_tiptoe_video" data-frame="16" src="render/infographic/mounting_tpose_up_tiptoe_video.png" alt=""></div></div><div class="floor"></div><div class="label">T-Pose</div></div>
+    <div class="card"><div class="figure"><div class="crop" style="--w:1097; --h:1008; --x:440; --y:48; --cw:386; --ch:940"><img data-project="mounting_tpose_down_tiptoe_video" data-frame="16" src="render/infographic/mounting_tpose_down_tiptoe_video.png" alt=""></div></div><div class="floor"></div><div class="label">Arms Down</div></div>
+
+    <div class="row">Kneeling</div>
+    <div class="card"><div class="figure"><div class="crop" style="--w:1115; --h:1024; --x:379; --y:186; --cw:704; --ch:679"><img data-project="mounting_forward_kneeling_video" data-frame="16" src="render/infographic/mounting_forward_kneeling_video.png" alt=""></div></div><div class="floor"></div><div class="label">Arms Forward</div></div>
+    <div class="card"><div class="figure"><div class="crop" style="--w:562; --h:998; --x:101; --y:170; --cw:447; --ch:685"><img data-project="mounting_back_kneeling_video" data-frame="16" src="render/infographic/mounting_back_kneeling_video.png" alt=""></div></div><div class="floor"></div><div class="label">Elbows Bent</div></div>
+    <div class="card"><div class="figure"><div class="crop" style="--w:1061; --h:975; --x:351; --y:159; --cw:446; --ch:683"><img data-project="mounting_tpose_up_kneeling_video" data-frame="16" src="render/infographic/mounting_tpose_up_kneeling_video.png" alt=""></div></div><div class="floor"></div><div class="label">T-Pose</div></div>
+    <div class="card"><div class="figure"><div class="crop" style="--w:1043; --h:958; --x:343; --y:152; --cw:444; --ch:680"><img data-project="mounting_tpose_down_kneeling_video" data-frame="16" src="render/infographic/mounting_tpose_down_kneeling_video.png" alt=""></div></div><div class="floor"></div><div class="label">Arms Down</div></div>
+  </main>
+</body>
+</html>

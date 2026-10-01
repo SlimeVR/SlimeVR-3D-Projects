@@ -1,8 +1,18 @@
 {
-  "asignment": "c33c494d34dadd20191a5c9cb9e323e285901740a2df426ac6b61642e25a9414",
-  "full_reset": "3c6928dfc56af3d7b79d795485864f6f787f8c52bc7bc1eebbdadfd68f4bc082",
-  "mounting_back": "813ab82f288531fee900dfdf1e0903d5812f1c8c32cd9ba7ec8967e125e85aca",
-  "mounting_forward": "2bae100fe451d6dd271eb23bc8228e048a954949f98fd376c96a4bcc05b82286",
-  "quiz": "84ff90a6b5628fceb072cce3f3dfcba713e8ff8d10fa277b907f5f82521bc7e9",
-  "user_height": "ea4a24d9ac336185f261a27232b58c01dd7ea648579c3d7e3ca38eab6a98c3b3"
+  "asignment": "8abdaadebb59b3c158464c732e564f5eeb0ec041ba8938d77d5b37b38b95806b",
+  "autobone": "d07304a56f6c66a35d5a321f5f286d62e2a61bdeda06f0398ca69d9603d21eb6",
+  "full_reset": "2d8497775b95d9cef50b264738bf1077d78a83f2be32650f5bf6030fe8c04211",
+  "mounting_back": "476d86084f7b84284c09f92e6c17a42fcb57da74d60838ea6ba85c04e47006e5",
+  "mounting_back_kneeling": "d7792d59c2a3353848f2b368a334e833b039dff6dfbf6eaddf046ec1cbf63a8d",
+  "mounting_back_tiptoe": "deeb94863a27d65c8f7f4365222ba57e94c0f43652efa3608cc2fd2516095717",
+  "mounting_feets": "39267fe33b5ada9cf9fae5ad7db93e266d4d89bb6dfff1ae2fa40867f1a4fffc",
+  "mounting_forward": "9804ec6cdea951cfddb116d6ef1bd1435e6c335e711d3b3569f47f230764693b",
+  "mounting_forward_tiptoe": "2288489931f72a7196b55dbf1d695f895d93f16802cc1d59f505da09b83ad503",
+  "mounting_tpose_down": "bc6272b864490f58426ea2d20f2a17f8b7759b2c9b91b0e700b8e1778eb9eb70",
+  "mounting_tpose_down_tiptoe": "3eaa4aaa56f70dddb5e5d383ff5b300fc6b75cc0670cad328903722b6fa80c6f",
+  "mounting_tpose_up": "925bbc5318002000f77d0644736346ec9a44b50e78d61bc965afd71182973de5",
+  "mounting_tpose_up_tiptoe": "d87c89def3b0c9bc7e5a8fa4a404f402781ba2e56b9c75c8382ae3ae0496e210",
+  "quiz": "3fe5d544d73347cda6cc0bbe46229d31bc00de18672bb2b6b7d8722f72cb9eb8",
+  "step_mounting": "fca48bf256fc3a3533a9c5d009efbb375c9005c02083151bd0eac32361ae5cd4",
+  "user_height": "fae9034774605ff9f942015b5f728ee142e67b934a8c503d842c9c4bd2bf4b73"
 }

@@ -1,6 +1,6 @@
 # SlimeVR-3D-Projects
-A collection of projects or 3d models around slimevr
 
+A collection of Blender projects and 3D models around SlimeVR. This repo includes the source files for Nighty pose renders and the skeleton preview robot which are used in SlimeVR.
 
 ### Project Structure
 
@@ -14,8 +14,8 @@ This is where the projects for verious scenes, poses, and animations will go.
 Each blender file in **./projects** will have it's own directory created here. All of the rendered images for a project can be found in the respective directories. 
 
 
-## Usage
-This section explains how to add a new pose. 
+## Usage (Nighty renders)
+This section explains how to add a new Nighty pose.
 It's reccomended to watch a [beginner's tutorial](https://youtu.be/8gi9lUYMRcI?si=XMZEfs8m354rdvqH) for keyframing if you're unfamilliar with blender.  
 
 ### Adding Poses
@@ -46,7 +46,6 @@ https://github.com/user-attachments/assets/19c5e868-23c0-4cd4-9ba8-474090d7fc6c
 https://github.com/user-attachments/assets/df0cc59e-d7b5-4199-8708-cbabb1c4b0fb
 
 
-
 ### Rendering: 
 To render, run the following script in a terminal. 
 ```
@@ -56,8 +55,5 @@ Ex:
 python render.py "C:\Program Files\Blender Foundation\Blender 4.3\blender-launcher.exe"
 ```
 
-
-
-
-
-
+## Usage (Skeleton preview)
+If you want to modify the skeleton preview model used in SlimeVR then you'll need to edit the blend file in **./resources**. There is an export helper script within the file with instructions on how to export it correctly to `.glb`
